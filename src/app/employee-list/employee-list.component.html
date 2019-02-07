@@ -1,0 +1,28 @@
+<div >  
+    <h2> Employee List</h2>  
+    <p><a [routerLink]="['/login']">Logout</a></p>
+    <div class="table-responsive table-container">  
+      <table class="table">  
+        <thead>  
+          <tr>  
+            <th>Id</th>  
+            <th>Employee Name</th>  
+            <th>City</th>  
+            <th>Postal Code</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr *ngFor="let emp of employees">  
+            <td class="hidden">{{emp.id}}</td>  
+            <td>{{emp.name}}</td>  
+            <td>{{emp.city}}</td>  
+            <td>{{emp.postal}}</td>  
+            <td>  
+              <button (click)="viewEmpDetails(emp)"  class="btn btn-info"> View Detail</button>  
+            </td>  
+          </tr>  
+        </tbody>  
+      </table>  
+    </div>
+   
+  </div>  

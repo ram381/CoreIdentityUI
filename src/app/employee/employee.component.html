@@ -1,0 +1,32 @@
+<div>  
+    <h2 class="text-center">View Employee Details</h2>  
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">PostalCode</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{employee.id}}</th>
+            <td>{{employee.name}}</td>
+            <td>{{employee.address}}</td>
+            <td>{{employee.city}}</td>
+            <td>{{employee.postalCode}}</td>
+            <td>{{employee.email}}</td>
+          </tr>
+         
+        </tbody>
+      </table>
+      <button class="btn btn-success" (click)="onSubmit()">Employee List</button>  
+
+    
+   
+    
+  </div> 
